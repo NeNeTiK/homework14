@@ -1,0 +1,49 @@
+/* Загальні стилі для всіх блоків */
+.block {
+    border: 3px solid pink;
+    /* Бордюр рожевого кольору */
+    margin: 5px;
+    /* Зовнішній відступ */
+    background-color: lightblue;
+    /* Голубий фон */
+}
+
+/* Стиль для зовнішнього блоку */
+#outer-block {
+    background-color: yellow;
+    /* Жовтий фон */
+}
+
+/* Стилі для блоків 3, 4, 5 */
+.block:nth-child(3),
+.block:nth-child(4),
+.block:nth-child(5) {
+    background-color: gray;
+    /* Сірий фон */
+    padding: 5px;
+    /* Внутрішній відступ */
+}
+
+/* Ширина блоків 3, 4, 5 */
+.block:nth-child(3) {
+    width: 25%;
+    float: left;
+    /* Вирівнювання в один ряд */
+}
+
+.block:nth-child(4) {
+    width: 60%;
+    float: left;
+    /* Вирівнювання в один ряд */
+}
+
+.block:nth-child(5) {
+    width: 13%;
+    float: left;
+    /* Вирівнювання в один ряд */
+}
+
+/* Скидання float для наступного блоку */
+.footer {
+    clear: both;
+}
